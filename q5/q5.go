@@ -15,6 +15,17 @@ package q5
 //Ajude Pedro a lidar com esta tarefa fácil.
 
 func ProcessString(s string) string {
-	// Seu código aqui
-	return ""
+	dot := "."
+	newS := strings.ToLower(s)
+
+	newS2 := strings.Replace(newS, "a", "", 1)
+	newS3 := strings.Replace(newS2, "e", "", 1)
+	newS4 := strings.Replace(newS3, "i", "", 1)
+	newS5 := strings.Replace(newS4, "o", "", 1)
+	newS6 := strings.Replace(newS5, "u", "", 1)
+
+	newS7 := dot + newS6
+
+	return newS7
+
 }
